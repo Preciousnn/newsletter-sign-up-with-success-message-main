@@ -1,64 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/CSS/style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
 
-<body>
-  <main class="page-wrapper">
-    <header>
-     <picture class="hero">
-      <source media="(min-width:576px)" srcset=".\assets\images\illustration-sign-up-desktop.svg">
-      <img width="100%" src="./assets/images/illustration-sign-up-mobile.svg" alt="Abstract image of computer screen, browser and graph">
-     </picture>
-    </header>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-    <section class="sign-up">
+  <body>
+    <main class="page-wrapper">
+      <header>
+        <picture class="hero">
+          <source
+            media="(min-width:576px)"
+            srcset=".\assets\images\illustration-sign-up-desktop.svg"
+          />
+          <img
+            width="100%"
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="Abstract image of computer screen, browser and graph"
+          />
+        </picture>
+      </header>
 
-      <h1>Stay updated!</h1>
-      <div class="newclass"></div>
+      <section class="sign-up">
+        <h1>Stay updated!</h1>
+        <div class="newclass"></div>
 
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    
-      <ul>
-        <li>Product discovery and building what matters</li>
-        <li>Measuring to ensure updates are a success</li>
-        <li>And much more!</li>
-      </ul>
-    
-      <form class="sign-up__form">
-        <label for="email">Email address</label>
-        <input type="email" name="email" id="email" required placeholder=" email@company.com">
-        
-        <button class="submit">
-          Subscribe to monthly newsletter
-        </button>
-      </form>
-      
-      
-    </section>
-  
-  </main>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">PreciousN</a>.
-  </div>
-</body>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+
+        <form class="sign-up__form">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder=" email@company.com"
+          />
+
+          <button class="submit" id="form-submit-button" onclick="submitForm()">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">PreciousN</a>.
+    </div>
+
+    <script>
+      // Function is a wrapper for a set of instructions
+      function submitForm() {
+        alert("worked");
+      }
+    </script>
+  </body>
 </html>
